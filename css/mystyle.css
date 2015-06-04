@@ -2,8 +2,11 @@
 /* light purple: edecf4 */
 /* light blue : caeefa */
 
+/***** body stuff *****/
+
 html {
 			background: url(/img/home-base.jpg) no-repeat center center fixed; 
+
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -15,25 +18,75 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+
+h5 {
+	font-size:5em;
+	color:#fff;
+}
+
+@media(max-width:767px){
+
+    h5 {font-size:3em}
+
+}
+
+@media(max-width:500px){
+
+    h5 {font-size:2em}
+
+}
+
+
+.morphext > .animated {
+    display: inline-block;
+}
+
+/****** row n col ****/
+
+.col-fixed {
+    /* custom width */
+    width:320px;
+}
+.col-min {
+    /* custom min width */
+    min-width:320px;
+}
+.col-max {
+    /* custom max width */
+    max-width:320px;
+}
+
+/****** div's *******/
+
 #indexintro {
 	position: fixed;
-	top: 80%;
-	background-color: #edecf4; /*get lower opacity here?*/
+	top: 50%;
+	/*background: rgba(255,255,255, 0.85);*/
 	padding: 10px;
-	padding-right: 50%;
+	padding-right: 10%;
+	padding-left: 10%
+}
+
+#indexmobintro {
+	position: fixed;
+	padding: 10px;
+	color: #ffd396;
 }
 
 #pgcontent {
 	width: 100%;
-	background-color: #fff;
+	background: rgba(255,255,255, 0.85);
 	margin-top: 10px;
 	padding:5px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 30px;
+	margin-bottom:20px;
+	opacity:90%;
 
 }
 
+/****** nav ******/
 
 a.mainnav {
 	color: #fefef2;
