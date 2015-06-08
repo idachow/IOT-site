@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="css/mystyle.css" rel="stylesheet">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
@@ -31,18 +31,18 @@
                     <div class="col-sm-4">
                         <div id="pgcontent">
                             <h1>subnav</h1>
-                                <P>Playing with Interactivity
+                                <P><button id="buttoninteractivity" class="btn btn-warning">Playing with Interactivity <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                                     <ul>
                                         <li>LittleBits</li>
                                         <li>Makey Makey</li>
                                     </ul>
-                                </p><P>Basic Electronics
+                                </p><P><button id="buttonelectronics" class="btn btn-warning">Basic Electronics <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                                     <uL>
                                         <li>Circuits</li>
                                         <li>Resistors, Capacitors, Transistors</li>
                                         <li>LEDs & Diodes</li>
                                     </ul>
-                                </p><P>Programming & Microprocessors
+                                </p><P><button id="buttonprogramming" class="btn btn-warning">Programming & Microprocessors <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                                     <ul>
                                         <li>Processing</li>
                                         <li>Arduino</li>
@@ -58,6 +58,7 @@
                     </div>
                     <div class="col-sm-8">
                         <div id="pgcontent">
+                            <div id="interactivity">
                             <h2>Playing with Interactivity</h2>
                                 <P>A few kits and tools that allow you to get going with IoT right out of the box, and also help with understanding the basics of circuits and electronics.</p>
                                 <h3>LittleBits</h3>
@@ -65,12 +66,15 @@
                                     <div class="embed-responsive embed-responsive-4by3">
                                         <iframe class="embed-responsive-item" src="//www.youtube.com/embed/6fJRDjaoLIk"></iframe>
                                     </div>
-                                <h3>Makey Makey</h3>
+                                <h3>MaKey MaKey</h3>
                                     <p>Get creative with how your can twist the idea of a "circuit" with anything that conducts -- your body, fruit, water... check out a video:<br>
                                     <div class="embed-responsive embed-responsive-4by3">
                                         <iframe class="embed-responsive-item" src="//www.youtube.com/embed/rfQqh7iCcOU"></iframe>
-                                    </div>
+                                    </div><br>
+                                    The MaKey MaKey puts you into the circuit, and once you touch a conductive object, you complete the circuit and can trigger responses on the computer. Explore how you can spatially reconceptualize existing games, programs, and more! Check out more details on how to get started on the <a href="http://makeymakey.com/howto">MaKey MaKey website</a>.
                                 </P>
+                            </div>
+                            <div id="electronics">
                             <h2>Basic Electronics</h2>
                                 <P>The basics of how to actually build up your own circuits - giving you more control and allowing you to make things as complicated or simple as you'd like. </p>
                                 <h3>Circuits, AC/DC, Digital and Analog I/O</h3>
@@ -86,6 +90,9 @@
                                 <h3>Resistors, Capacitors, Transistors</h3>
                                     <P>These components get used on a case-by-case basis in your circuit - to resist the flow of current (resistors), temporarily store electric charge (capacitors), and control two different flows of current (transistors). [Read more at the <a href="http://www.dummies.com/how-to/content/basic-electronic-components-and-what-they-do.html">source</a>]</p>
                                 <h3>LEDs & Diodes</h3>
+                                    <P>Diodes take away from the power, but do not decrease current. LEDs are one form of diode, and stand for "Light-emitting Diode".</P>
+                            </div>
+                            <div id="programming">
                             <h2>Programming & Microprocessors</h2>
                                 <p>Gaining more control over all the details.</p>
                                 <h3>Processing</h3>
@@ -96,7 +103,7 @@
                                     <p>Other boards that follow along the lines of Arduino are the Intel Atom Board, the Raspberry Pi, and the Sparkfun Red Board... all branded a bit differently, but technically able to all do the same thing. </p>
                                 <h3>Integration with sensors & more</h3>
                                     <p>Once you can program and complete circuits with given parts, you can experiment with buying more parts from places like <a href="http://sparkfun.com">Sparkfun</a> which could be anything from motors and photocells to <a href="https://www.sparkfun.com/products/13631">DS touch screens</a>, and you can play with taking apart toys and old computers and see what you can create!</p>
-
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,8 +112,6 @@
 
 
 
-
-<P></p>
 
 <div id="foot">
     </div>

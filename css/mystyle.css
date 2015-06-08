@@ -51,6 +51,10 @@ h5 {
     display: inline-block;
 }
 
+.hide{
+	color:#000;
+}
+
 /****** row n col ****/
 
 .col-fixed {

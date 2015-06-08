@@ -6,3 +6,5 @@
 > pick a feed. leaning towards pinterest? tumblr???? 
 > self curate? idk
 > fun
+> mobile navigation
+> utilize quotes from documentation links (w source)
