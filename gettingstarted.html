@@ -30,30 +30,29 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div id="pgcontent">
-                            <h1>subnav</h1>
-                                <P><button id="buttoninteractivity" class="btn">Playing with Interactivity <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-                                    <ul>
-                                        <li>LittleBits</li>
-                                        <li>Makey Makey</li>
-                                    </ul>
-                                </p><P><button id="buttonelectronics" class="btn ">Basic Electronics <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-                                    <uL>
-                                        <li>Circuits</li>
-                                        <li>Resistors, Capacitors, Transistors</li>
-                                        <li>LEDs & Diodes</li>
-                                    </ul>
-                                </p><P><button id="buttonprogramming" class="btn">Programming & Microprocessors <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-                                    <ul>
-                                        <li>Processing</li>
-                                        <li>Arduino</li>
-                                        <li>Other boards</li>
-                                        <li>Integration with sensors & more</li>
-                                    </ul>
-                                </p> 
-                            <div class="hidden-xs">
-                                <h1>feed</h1>
-                                    <p>???pinterest</h1>
-                            </div>
+                            <div id="subnav">
+                                <h1>subnav</h1>
+                                    <P><button id="buttoninteractivity" class="btn">Playing with Interactivity <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                                        <ul>
+                                            <li>LittleBits</li>
+                                            <li>Makey Makey</li>
+                                        </ul>
+                                    </p><P><button id="buttonelectronics" class="btn ">Basic Electronics <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                                        <uL>
+                                            <li>Circuits</li>
+                                            <li>Resistors, Capacitors, Transistors</li>
+                                            <li>LEDs & Diodes</li>
+                                            <li>Reading a multimeter</li>
+                                        </ul>
+                                    </p><P><button id="buttonprogramming" class="btn">Programming & Microprocessors <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                                        <ul>
+                                            <li>Processing</li>
+                                            <li>Arduino</li>
+                                            <li>Other boards</li>
+                                            <li>Integration with sensors & more</li>
+                                        </ul>
+                                    </p> 
+                                </div>
                         </div>
                     </div>
                     <div class="col-sm-8">
@@ -85,24 +84,57 @@
                                     <div class="embed-responsive embed-responsive-4by3">
                                         <iframe class="embed-responsive-item" src="//www.youtube.com/embed/k9jcHB9tWko"></iframe>
                                     </div>
-                                    <a href="http://www.instructables.com/id/Basic-Electronics/step19/Your-third-circuit/">Helpful 
-                                    Document</a></p>
                                 <h3>Resistors, Capacitors, Transistors</h3>
-                                    <P>These components get used on a case-by-case basis in your circuit - to resist the flow of current (resistors), temporarily store electric charge (capacitors), and control two different flows of current (transistors). [Read more at the <a href="http://www.dummies.com/how-to/content/basic-electronic-components-and-what-they-do.html">source</a>]</p>
+                                    <P>
+                                        These components get used on a case-by-case basis in your circuit - to resist the flow of current (resistors), temporarily store electric charge (capacitors), and control two different flows of current (transistors). [Read more at the <a href="http://www.dummies.com/how-to/content/basic-electronic-components-and-what-they-do.html">Source</a>]<BR><BR>
+                                        Resistors add resistance to the circuit and reduces the flow of electrical current. [<a href="http://www.instructables.com/id/Basic-Electronics/step6/Resistors/">Source</a>]. It is important to use resistors to prevent burning out of parts, especially LEDs which have little internal resistance.<BR><BR>
+                                        A capacitor is a component that stores electricity and then discharges it into the circuit when there is a drop in electricity. [<a href="http://www.instructables.com/id/Basic-Electronics/step7/Capacitors/">Source</a>] They ensure a steady current through the circuit - which can be helpful in ensuring constant electrical flow.<BR><BR>
+                                        A transistor takes in a small electrical current at its base pin and amplifies it such that a much larger current can pass between its collector and emitter pins. [<a href="http://www.explainthatstuff.com/howtransistorswork.html">Source</a>] It can then be used as just an <i>amplifier</i> (as used in hearing aids - where they pick up sounds and amplify them as electric currents) or also as a <i>switch</i>. As a switch, one small current can switch on a larger one. This is essentially how computer chips work, with billions of transistors shifting between on and off (between zero and one, essentially binary).<BR><BR>
+                                        Example circuits using the above . . . . . . . 
+                                    </p>
                                 <h3>LEDs & Diodes</h3>
-                                    <P>Diodes take away from the power, but do not decrease current. LEDs are one form of diode, and stand for "Light-emitting Diode".</P>
+                                    <P>
+                                        The most common function of a diode is to allow an electric current to pass in one direction (called the diode's forward direction), while blocking current in the opposite direction (the reverse direction). [<a href="http://enwikipedia.org/wiki/Diode">Source</a>] This means they can be placed in a circuit to prevent electricity from flowing in the wrong direction. Diodes result in a voltage drop - meaning that hooking up LEDs (also known as a "Light Emitting Diode") in a series would result in a dimmer light with each LED - although diodes do not do much to reduce the current. Therefore, it is still important to use resistors in a circuit with a diode.<BR><BR>
+                                        Regarding the usage of actual LEDs, they come in a couple different types. You can buy RGB LEDs that then have four wires coming out the bottom - one for ground, and three for each color. Following the principles of light-color theory, you can make different colors by applying power to different combinations. <BR><BR>
+                                        / image /
+                                    </P>
+                                <h3>Reading a Multimeter</h3>
+                                    <P>
+                                        <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter">Sparkfun: How to Use a Multimeter</a><BR><BR>
+                                        If you can build a circuit, that's all fine and good, but it's always nice to be able to diagnose your own circuit (the voltage, current, etc), and be able to just test a battery. WIth a multimeter, you can check switches and power sources in your circuit to troubleshoot what might be wrong. In order to find out what's wrong, it might also be helpful to go over some <a href="https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law">basic physics</a>, and refresh on Ohm's Law (in order to find out what resistors to use). Using these equations can help you plan out your circuits more fully before hand without endangering the more fragile parts. Still, for more basic circuits, you can always build your circuit as you go, and use a multimeter to test the current and voltage at different points.<BR><BR>
+                                        Also check out this too-intricately illustrated <a href="http://www.wikihow.com/Read-a-Multimeter">WikiHow page</a>.
+                                    </p>
                             </div>
-                            <div id="programming">
+                            <div id="programming"> 
                             <h2>Programming & Microprocessors</h2>
                                 <p>Gaining more control over all the details.</p>
                                 <h3>Processing</h3>
-                                    <p>A Java-based programming language that caters towards graphics and graphics-related libraries. Check out <a href="http://openprocessing.org">Processing</a>.</p>
+                                    <p>
+                                        Not everything interactive has to start with the electronics. Processing is a Java-based programming language that caters towards graphics and graphics-related libraries. Check out <a href="http://openprocessing.org">Processing</a>.<BR><BR>
+                                        Hooking up libraries like OpenCV really open up how you can start playing with coded aesthetics and interactivity right on your computer.
+                                    </p>
                                 <h3>Arduino</h3>
-                                    <p>A microcontroller with a great programming system behind it - with integration with other languages like Processing. Check out the <a href="http://www.arduino.cc">Arduino board</a>.</p>
+                                    <p>
+                                        The Arduino is a microcontroller with a great programming system behind it - with integration with other languages like Processing. Check out the <a href="http://www.arduino.cc">Arduino board</a>. <BR><BR>
+                                        Arduinos have both Digital I/O and Analog I/O ports that can be hooked up to circuits, and can be programmed to control them. Digital ports are, for the most part, pretty straightforward, and can either supply or not supply power (on or off). For example, hooking up an LED to an digital port allows the Arduino to turn it off or on by supplying or cutting off power. (However, there are ways of getting more analog-like results through the ports, using <a href="http://www.arduino.cc/en/Tutorial/PWM">Pulse Width Modulation</a> (PWM). )<BR><BR>
+                                        The analog ports are not restricted to the "on-off" binary system of digital. This makes them perfect for use with sensors such as photocells or ultrasonic sensors, as their readings coming back can be interpreted as meaningful sensor data. 
+                                        You can read more about analog and digital signals <a href="https://learn.sparkfun.com/tutorials/analog-vs-digital">here</a>.<BR><BR>
+                                        Basically, the analog inputs take in data that can be interepreted on the Arduino, and the digital outputs can control processes on the circuit. Here's a basic example of a Arduino enabled circuit:<BR>
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/5jeaIfJI6NM"></iframe>
+                                        </div><BR>
+                                        This is a <a href="https://learn.sparkfun.com/tutorials/what-is-an-arduino">Sparkfun guide</a> to the Arduino, which is a great launching point if you intend on buying more sensors and shields to work with - as you can buy them straight from the site as well. 
+                                    </p>
                                 <h3>Other boards</h3>
                                     <p>Other boards that follow along the lines of Arduino are the Intel Atom Board, the Raspberry Pi, and the Sparkfun Red Board... all branded a bit differently, but technically able to all do the same thing. </p>
                                 <h3>Integration with sensors & more</h3>
-                                    <p>Once you can program and complete circuits with given parts, you can experiment with buying more parts from places like <a href="http://sparkfun.com">Sparkfun</a> which could be anything from motors and photocells to <a href="https://www.sparkfun.com/products/13631">DS touch screens</a>, and you can play with taking apart toys and old computers and see what you can create!</p>
+                                    <p>
+                                        Once you can program and complete circuits with given parts, you can experiment with buying more parts from places like <a href="http://sparkfun.com">Sparkfun</a> which could be anything from motors and photocells to <a href="https://www.sparkfun.com/products/13631">DS touch screens</a>, and you can play with taking apart toys and old computers and see what you can create!<BR><BR>
+                                        It can really be handy to have soldering iron at hand, especially if working outside of a preassembled kit. Taking apart old toys and old electronics can lead to fun projects, but might need more than jump wires and alligator clips. This is <a href="http://www.amazon.com/Hakko-FX888D-23BY-Digital-Soldering-FX-888D/dp/B00ANZRT4M">one popular soldering iron</a> and a <a href="http://www.amazon.com/Weller-WLC100-40-Watt-Soldering-Station/dp/B000AS28UC/ref=sr_1_5?ie=UTF8&qid=1433875398&sr=8-5&keywords=soldering+iron">cheaper alternative</a>. <a href="http://www.amazon.com/SE-MZ101B-Helping-Magnifying-Glass/dp/B000RB38X8/ref=sr_1_3?ie=UTF8&qid=1433875432&sr=8-3&keywords=soldering+iron">Assistive stands</a> can help hold wires in place, which is pretty helpful. <BR><BR>
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/oqV2xU1fee8"></iframe>
+                                        </div><br>
+                                    </p>
                             </div>
                         </div>
                     </div>

@@ -9,50 +9,64 @@ $(function(){
 /****gettingstarted****/
 
 $(function(){
+	$.hideAll = function () {
+		$("#initialtext").hide();
+		$("#interactivity").hide();
+		$("#electronics").hide();
+		$("#programming").hide();
+		$("#links").hide();
+		$("#projects").hide();
+		$("#inspa").hide();
+	};
+
 	$("#interactivity").hide();
 	$("#electronics").hide();
 	$("#programming").hide();
 	$("#links").hide();
 	$("#projects").hide();
 	$("#inspa").hide();
-});
 
-$(function(){
 	$( "#buttoninteractivity" ).click(function() {
+			$.hideAll();
 	        $( "#interactivity" ).fadeToggle("slow", "linear");
 	});
-});
 
-$(function(){
+
+
 	$( "#buttonelectronics" ).click(function() {
+			$.hideAll();
 	        $( "#electronics" ).fadeToggle("slow");
 	});
-});
 
-$(function(){
+
 	$( "#buttonprogramming" ).click(function() {
+			$.hideAll();
 	        $( "#programming" ).fadeToggle("slow");
 	});
-}); 
+
+
 
 //*resources*//
 
-$(function(){
+
 	$( "#buttonlinks" ).click(function() {
+			$.hideAll();
 	        $( "#links" ).fadeToggle("slow");
 	});
-}); 
+
 
 //****projects****//
 
-$(function(){
+
 	$( "#buttoninspa" ).click(function() {
+			$.hideAll();
 	        $( "#inspa" ).fadeToggle("slow");
 	});
-}); 
 
-$(function(){
+
+
 	$( "#buttonprojects" ).click(function() {
+			$.hideAll();
 	        $( "#projects" ).fadeToggle("slow");
 	});
 }); 
