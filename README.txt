@@ -8,3 +8,5 @@
 > fun
 > mobile navigation
 > utilize quotes from documentation links (w source)
+> subnav should follow the scroll
+> proper animation for toggle (also the arrow and subsub)
