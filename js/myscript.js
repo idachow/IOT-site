@@ -15,16 +15,13 @@ $(function(){
 		$("#electronics").hide();
 		$("#programming").hide();
 		$("#links").hide();
-		$("#projects").hide();
-		$("#inspa").hide();
 	};
 
 	$("#interactivity").hide();
 	$("#electronics").hide();
 	$("#programming").hide();
 	$("#links").hide();
-	$("#projects").hide();
-	$("#inspa").hide();
+
 
 	$( "#buttoninteractivity" ).click(function() {
 			$.hideAll();
@@ -70,3 +67,45 @@ $(function(){
 	        $( "#projects" ).fadeToggle("slow");
 	});
 }); 
+
+/****gallery lightbox***/
+
+$(function(){
+
+	var $overlay = $('<div id="overlay"></div>');
+    var $image = $("<img>");
+    var $caption = $("<p></p>");
+    var $linkout = $("<a>Original Source</a>");
+
+     /**text attached to image attached to overlay attached to body*/
+    $overlay.append($image);
+    $overlay.append($caption);
+    $overlay.append($linkout);
+	$("body").append($overlay);
+
+	$("#inspirationGallery a").click(function(event){
+		event.preventDefault();
+		var imgLoc = $(this).children("img").attr("src");
+        $image.attr("src",imgLoc);
+		$overlay.show();
+
+        var captionText = $(this).children("img").attr("alt");
+        $caption.text(captionText);
+
+        /*need a link out to original source!*/
+        var href = $(this).attr("href");
+        $linkout.attr("href",href);
+
+	});
+
+    /*remove overlay w click*/
+    $overlay.click(function(){
+        $overlay.hide();
+    });
+
+});
+
+
+
+
+

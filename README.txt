@@ -1,16 +1,18 @@
 (for citizen)
 
-+ Fix mobile navigation
-+ Add video / (this-next hide)
-+ image lightbox thing
+Today (Wednesday):
++ image lightbox thing (12pm)
++ Fix mobile navigation (4pm)
++ Finish resources content (5pm)
 
-> changing backgrounds
-> ...different backgrounds
-> organization esp w utilizing grid
-> pick a feed. leaning towards pinterest? tumblr???? 
-> self curate? idk
-> fun
-> mobile navigation
+By Friday:
 > proper animation for toggle (also the arrow and subsub)
+> Randomize order of items in gallery list
+	http://stackoverflow.com/questions/8225582/randomize-a-unordered-list
+> Initial text
 
-- no bold
+Future version:
+- no bold issue
+- changing backgrounds
+- ...different backgrounds
+- organization esp w utilizing grid
