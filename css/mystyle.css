@@ -108,6 +108,8 @@ h5 {
 	background: rgba(255,255,255, 0.85);
 }
 
+
+
 /****** nav ******/
 
 a {
@@ -169,6 +171,7 @@ a.mainnav:hover {
 
 #overlay img {
 	margin-top: 10%;
+	max-height:60%;
 }
 
 #overlay p {

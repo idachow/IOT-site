@@ -9,23 +9,26 @@ $(function(){
 /****gettingstarted****/
 
 $(function(){
+    $navarrow = ("<span></span>");
+
 	$.hideAll = function () {
 		$("#initialtext").hide();
 		$("#interactivity").hide();
 		$("#electronics").hide();
 		$("#programming").hide();
-		$("#links").hide();
+        $("button").attr("class", "btn");
 	};
 
 	$("#interactivity").hide();
 	$("#electronics").hide();
 	$("#programming").hide();
-	$("#links").hide();
+
 
 
 	$( "#buttoninteractivity" ).click(function() {
 			$.hideAll();
 	        $( "#interactivity" ).fadeToggle("slow", "linear");
+            $(this).attr("class", "btn btn-warning");
 	});
 
 
@@ -33,40 +36,15 @@ $(function(){
 	$( "#buttonelectronics" ).click(function() {
 			$.hideAll();
 	        $( "#electronics" ).fadeToggle("slow");
+            $(this).attr("class", "btn btn-warning");
 	});
-
 
 	$( "#buttonprogramming" ).click(function() {
 			$.hideAll();
 	        $( "#programming" ).fadeToggle("slow");
+            $(this).attr("class", "btn btn-warning");
 	});
-
-
-
-//*resources*//
-
-
-	$( "#buttonlinks" ).click(function() {
-			$.hideAll();
-	        $( "#links" ).fadeToggle("slow");
-	});
-
-
-//****projects****//
-
-
-	$( "#buttoninspa" ).click(function() {
-			$.hideAll();
-	        $( "#inspa" ).fadeToggle("slow");
-	});
-
-
-
-	$( "#buttonprojects" ).click(function() {
-			$.hideAll();
-	        $( "#projects" ).fadeToggle("slow");
-	});
-}); 
+});
 
 /****gallery lightbox***/
 
@@ -106,6 +84,8 @@ $(function(){
 });
 
 
+//***mobile nav****//
 
+//*** left you multiple missed calls whyda only call me when im high***//
 
 
