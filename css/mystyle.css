@@ -105,7 +105,7 @@ h5 {
 
 #fullpg{
 	width:100%;
-	background: rgba(255,255,255, 0.85);
+	background: rgba(255,255,255, .9);
 }
 
 
@@ -176,6 +176,18 @@ a.mainnav:hover {
 
 #overlay p {
 	color:#fff;
+}
+
+/**** scrolling nav ****/
+
+#subnav nav {
+	padding: 0px;
+}
+#subnav nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    margin-top:10px;
 }
 
 

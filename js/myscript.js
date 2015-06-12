@@ -86,6 +86,17 @@ $(function(){
 
 //***mobile nav****//
 
-//*** left you multiple missed calls whyda only call me when im high***//
+$(document).ready(function(){
 
+    $(window).scroll(function(){
+        var window_top = $(window).scrollTop() + 10; // 
+        var div_top = $('#subnav').offset().top;
+            if (window_top > div_top) {
+                $('nav').addClass('stick');
+            } else {
+                $('nav').removeClass('stick');
+            }
+    });
+
+});
 
