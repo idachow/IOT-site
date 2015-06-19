@@ -6,6 +6,24 @@ $(function(){
   $("#foot").load("footer.html"); 
 });
 
+$(function(){
+    var pull        = $('#pull');
+        menu        = $('nav ul');
+        menuHeight  = menu.height();
+ 
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+
+    $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 320 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+        }
+    }); 
+});
+
 /****gettingstarted****/
 
 $(function(){
@@ -28,7 +46,7 @@ $(function(){
 	$( "#buttoninteractivity" ).click(function() {
 			$.hideAll();
 	        $( "#interactivity" ).fadeToggle("slow", "linear");
-            $(this).attr("class", "btn btn-block active");
+            $(this).attr("class", "btn btn-block btn-warning");
 	});
 
 
@@ -47,6 +65,7 @@ $(function(){
 });
 
 /****gallery lightbox***/
+
 
 $(function(){
 
@@ -100,6 +119,8 @@ $(document).ready(function(){
         });
     }
 
-
 });
+
+
+
 
