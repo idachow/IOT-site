@@ -16,7 +16,7 @@ $(function(){
 		$("#interactivity").hide();
 		$("#electronics").hide();
 		$("#programming").hide();
-        $("button").attr("class", "btn");
+        $("button").attr("class", "btn btn-block ");
 	};
 
 	$("#interactivity").hide();
@@ -28,7 +28,7 @@ $(function(){
 	$( "#buttoninteractivity" ).click(function() {
 			$.hideAll();
 	        $( "#interactivity" ).fadeToggle("slow", "linear");
-            $(this).attr("class", "btn btn-warning");
+            $(this).attr("class", "btn btn-block active");
 	});
 
 
@@ -36,13 +36,13 @@ $(function(){
 	$( "#buttonelectronics" ).click(function() {
 			$.hideAll();
 	        $( "#electronics" ).fadeToggle("slow");
-            $(this).attr("class", "btn btn-warning");
+            $(this).attr("class", "btn btn-block btn-warning");
 	});
 
 	$( "#buttonprogramming" ).click(function() {
 			$.hideAll();
 	        $( "#programming" ).fadeToggle("slow");
-            $(this).attr("class", "btn btn-warning");
+            $(this).attr("class", "btn btn-block btn-warning");
 	});
 });
 
@@ -88,15 +88,18 @@ $(function(){
 
 $(document).ready(function(){
 
-    $(window).scroll(function(){
-        var window_top = $(window).scrollTop() + 10; // 
-        var div_top = $('#subnav').offset().top;
-            if (window_top > div_top) {
-                $('nav').addClass('stick');
-            } else {
-                $('nav').removeClass('stick');
-            }
-    });
+    if( viewport.is("<sm") ) {
+        $(window).scroll(function(){
+            var window_top = $(window).scrollTop() + 10; // 
+            var div_top = $('#subnav').offset().top;
+                if (window_top > div_top) {
+                    $('nav').addClass('stick');
+                } else {
+                    $('nav').removeClass('stick');
+                }
+        });
+    }
+
 
 });
 
